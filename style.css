@@ -1,0 +1,284 @@
+:root {
+    --dark-prime: #111827;
+    --dark-second: #1F2937;
+    --dark-third: #374151;
+    --dark-forth: #4B5563;
+    --dark-fifth: #6B7280;
+    --green-prime: #064E3B;
+    --green-second: #065F46;
+    --green-third: #047857;
+    --green-forth: #059669;
+    --green-fifth: #10B981;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    border-left: 1px solid var(--dark-fifth);
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-forth);
+}
+
+body {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+fieldset {
+    border: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+input, a {
+    font-family: inherit;
+    color: inherit;
+}
+
+hr {
+    border: 1px solid var(--dark-second)
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.welcome, .form {
+    border-radius: 4px;
+}
+
+.welcome {
+    border: 1px solid var(--green-forth);
+    box-shadow: 0 0 5px var(--green-forth);
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/arpad-czapp-H424WdcQN4Y-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: var(--green-fifth);
+}
+
+.welcome-message {
+    color: #ccc;
+    font-size: 0.9rem;
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form .container {
+    position: relative;
+}
+
+.form {
+    background-color: var(--dark-prime);
+}
+
+.login-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-heading span {
+    color: var(--green-fifth);
+}
+
+.login-fields {
+    color: #ccc;
+    display: grid;
+    gap: 1rem;
+}
+
+.inputs {
+    display: grid;
+    gap: 1rem;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.inp, .login-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.inp {
+    display: block;
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: transparent;
+    border: 1px solid var(--dark-third);
+    color: #eee;
+}
+
+.inp:focus {
+    outline: var(--dark-fifth) solid 2px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+
+    margin-top: 0.5rem;
+}
+
+.check {
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+/*============checkbox styling =================*/
+.rem-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+  /* Hide the browser's default checkbox */
+.rem-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--dark-forth)
+}
+
+  /* On mouse-over, add a grey background color */
+.rem-check:hover input ~ .checkmark {
+    background-color: var(--dark-second);
+}
+
+  /* When the checkbox is checked, add a blue background */
+.rem-check input:checked ~ .checkmark {
+    background-color: var(--green-fifth);
+}
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+  /* Show the checkmark when checked */
+.rem-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+  /* Style the checkmark/indicator */
+.rem-check .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid #eee;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*============checkbox styling =================*/
+
+.login-btn {
+    cursor: pointer;
+    background-color: var(--green-fifth);
+    color: #eee;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    background-color: var(--green-forth);
+}
+
+.links {
+    display: grid;
+    justify-content: left;
+}
+
+.link {
+    padding: 0.4rem 0;
+    text-decoration: none;
+}
+
+.sign {
+    margin-left: 2rem;
+    align-self: center;
+}
+
+.link:hover {
+    color: var(--green-fifth);
+}
+
+@media screen and (min-width: 600px) {
+    .all-contents {
+        display: flex;
+        justify-content: center;
+    }
+
+    .all-contents > * {
+        flex: 1;
+    }
+
+    .welcome {
+        min-height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/victor-rosario-0AL8kugpjJk-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

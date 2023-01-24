@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="all-contents">
+            <div class="welcome">
+                <div class="container">
+                    <h1 class="main-heading">Welcome</h1>
+                    <div class="welcome-message">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quos neque quam provident consequatur modi repellat minima ipsam voluptate laudantium explicabo est, officiis tenetur rem! Nostrum vero optio quibusdam ab!
+                        </p>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam modi doloribus suscipit tempore enim asperiores?</p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="form">
+                <div class="container">
+                    <h2 class="login-heading">Log<span>in</span></h2>
+                    <div class="login-fields">
+                        <fieldset class="inputs">
+                            <div class="error"></div>
+                            <div class="field">
+                                <label for="name">Username or Email</label>
+                                <input type="text" name="Name" id="name" class="inp" placeholder="e.g: myname or email@email.com" autofocus="on" required>
+                            </div>
+                            <div class="field">
+                                <label for="name">Password</label>
+                                <input type="password" name="password" class="inp" id="password" placeholder="Enter password" required>
+                            </div>
+                            <div class="field remember">
+                                <label class="rem-check" >Remember me
+                                <input type="checkbox" name="checkbox" class="check" id="rememberMe">
+                                <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <button class="login-btn">Login</button>
+                    </div>
+                    <hr>
+                    <div class="forgot">
+                        <div class="links">
+                            <a href="#" class="link">Forgot password?</a>
+                            <p>Don't have an account? <a href="#" class="link sign">Singup</a></p>
+                        </div>
+                    </div>
+                    <!-- <div class="popup">Loggedin<br>successfuly</div> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
